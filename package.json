@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@pinia/nuxt": "^0.1.6",
-    "element-plus": "1.2.0-beta.5",
+    "element-plus": "^1.2.0-beta.6",
     "nuxt3": "^3.0.0-27307420.6a25d3e",
     "sass": "^1.44.0",
     "typescript": "^4.5.2"
@@ -20,6 +20,7 @@
     }
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^0.2.4",
     "pinia": "^2.0.5"
   }
 }
