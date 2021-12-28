@@ -1,0 +1,44 @@
+.helpt {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.helpt1 {
+    font-size: 20px;
+    color: #2c3e50;
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+.helpc {
+    font-size: 14px;
+    color: #2c3e50;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
+.s1 {
+    text-align: center;
+    font-size: 1.375rem;
+    color: #2c3e50;
+}
+
+.s2 {
+    text-align: center;
+    font-size: .75rem;
+    color: #bdc3c7;
+    letter-spacing: .0625rem;
+    margin-top: .625rem;
+    margin-bottom: 2.1875rem;
+}
+
+.s4 {
+    font-weight: bold;
+}
+
+.s3 {
+    font-size: .75rem;
+    color: #7f8c8d;
+    padding: 0 2.8125rem 3.5rem .25rem;
+}

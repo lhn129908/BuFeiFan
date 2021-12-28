@@ -20,6 +20,10 @@
     }
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^0.2.4",
+    "@vueuse/core": "^7.4.0",
+    "crypto-js": "^4.1.1",
+    "element-china-area-data": "^5.0.2",
     "pinia": "^2.0.5"
   }
 }

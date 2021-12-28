@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-header height="180px">
+        <el-header height="180px" style="background-color:white">
             <Head></Head>
         </el-header>
 
@@ -8,7 +8,7 @@
             <slot></slot>
         </el-main>
 
-        <el-footer height="275px">
+        <el-footer height="275px" style="z-index:0;">
             <Foot></Foot>
         </el-footer>
     </el-container>

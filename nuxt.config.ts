@@ -13,7 +13,18 @@ export default defineNuxtConfig({
     //   path: 'node_modules/element-plus/lib/components/*/index.js',
     // }
   ],
+  privateRuntimeConfig: {
+    API_BASE: "http://101.35.3.52",
+  },
   vite: {
-    logLevel: "info"
+    logLevel: "info",
+    server:{
+      proxy:{
+        "/api":{
+          target:"http://101.35.3.52",
+          changeOrigin:true,
+        }
+      }
+    }
   },
 });
