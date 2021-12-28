@@ -13,3 +13,10 @@
         </el-footer>
     </el-container>
 </template>
+
+<style lang="scss">
+   main.el-main{
+    padding: 0;
+    margin: 0;
+  }
+</style>

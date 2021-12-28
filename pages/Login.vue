@@ -3,3 +3,9 @@
         登陆页面
     </div>
 </template>
+
+<script>
+export default{
+    layout:"blank"
+}
+</script>

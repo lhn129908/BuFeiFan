@@ -7,6 +7,10 @@ export default defineNuxtConfig({
   },
   buildModules: ["@vueuse/core/nuxt", "@pinia/nuxt"],
   css: ["assets/scss/index.scss"],
+  //http://101.35.3.52/api/findRounds/findround
+  privateRuntimeConfig: {
+    API_BASE: "http://101.35.3.52",
+  },
   components: [
     "~/components/",
     // {
@@ -14,6 +18,15 @@ export default defineNuxtConfig({
     // }
   ],
   vite: {
-    logLevel: "info"
+    logLevel: "info",
+    server: {
+      proxy: {
+        "/api": {
+          target: "http://101.35.3.52",
+          changeOrigin: true,
+          // rewrite: (path) => path.replace(/^\/api/, '')
+        }
+      },
+    }
   },
 });
