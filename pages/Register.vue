@@ -33,7 +33,7 @@
                     <el-button type="primary" @click="register">立即注册</el-button>
                 </el-form-item>
                 <div class="xie">
-                    注册账号即表示您同意并愿意遵守布艺家纺网
+                    注册账号即表示您同意并愿意遵守布非凡家纺网
                     <nuxt-link class="link2" to="/About?lis=4">《服务协议》</nuxt-link>和
                     <nuxt-link class="2" to="/About?lis=5">《隐私政策》</nuxt-link>
                     <nuxt-link to="/Login" class="link1">已有帐号，去登陆></nuxt-link>

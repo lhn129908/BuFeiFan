@@ -11,7 +11,7 @@
                 </el-form-item>
                 <el-form-item label="验证码">
                     <el-input class="yan" v-model="yan" placeholder="请输入验证码"></el-input>
-                    <!-- <Sldentify class="sidentify" @click="refreshCode" :identifyCode="identifyCode"></Sldentify> -->
+                    <Sldentify class="sidentify" @click="refreshCode" :identifyCode="identifyCode" ref="sldentify"></Sldentify>
                     <span class="shua">看不清?点击刷新!</span>
                 </el-form-item>
                 <el-form-item>
@@ -38,6 +38,10 @@ const router = useRouter()
 
 const { user } = useUser()
 
+const sldentify=ref()
+const yan=ref()
+const identifyCode=ref()
+
 const login = async () => {
     console.log("登录")
     const { data } = await useFetch("/api/user/login", {
@@ -47,6 +51,7 @@ const login = async () => {
             password: CryptoJS.MD5(password.value).toString(),//将密码加密并转码
         }
     })
+    console.log(yan.value,identifyCode)
     if (data.value.code === 0) {
         // 在登陆之后拿去数据库数据
         const { data: result } = await useFetch("/api/user/userinfo")
@@ -60,20 +65,20 @@ const login = async () => {
 
 
 
-// const randomNum = (min, max) => {
-//     return Math.floor(Math.random() * (max - min) + min)
-// }
-// const refreshCode = () => {
-//     identifyCode = ''
-//     makeCode(identifyCodes, 4)
-// }
-// const makeCode = (o, l) => {
-//     for (let i = 0; i < l; i++) {
-//         identifyCode += identifyCodes[
-//             randomNum(0, identifyCodes.length)
-//         ]
-//     }
-// }
+const randomNum = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min)
+}
+const refreshCode = () => {
+    identifyCode = ''
+    makeCode(identifyCodes, 4)
+}
+const makeCode = (o, l) => {
+    for (let i = 0; i < l; i++) {
+        identifyCode += identifyCodes[
+            randomNum(0, identifyCodes.length)
+        ]
+    }
+}
 
 </script>
 

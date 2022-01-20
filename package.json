@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxi build",
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --port 66",
     "start": "node .output/server/index.mjs",
     "generate": "export NITRO_PRESET=browser && npm run build"
   },

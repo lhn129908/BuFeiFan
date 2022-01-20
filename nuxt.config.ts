@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
-  dev: true,
+  // dev: true,
   meta: {
     title: "ElementPlus + Nuxt3",
   },

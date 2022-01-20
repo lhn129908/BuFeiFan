@@ -11,8 +11,8 @@
       <nuxt-link to="/About?lis=5">隐私政策</nuxt-link>
     </div>
     <div class="zhe">
-      <p style="color: white">Copyright©2018浙江布华科技有公司版权所有</p>
-      <text style="color: blue">浙ICP备19022120号-1</text>
+      <p style="color: white">Copyright©2018郑州布非凡家纺有限公司版权所有</p>
+      <text style="color: blue">豫ICP备19022120号-1</text>
       <text style="color: grey">经营许可证:浙B2-20180798</text>
     </div>
     <div class="erweima">

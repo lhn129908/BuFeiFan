@@ -10,7 +10,7 @@
               <img src="../images/2.jpg" alt="" class="find-buyi" />
               <div class="buyi">
                 <span>(3)</span>
-                <span>BY:布艺家纺</span>
+                <span>BY:布非凡家纺</span>
                 <div>08-21-2018</div>
               </div>
             </div>
